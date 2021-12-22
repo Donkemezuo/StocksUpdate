@@ -1,7 +1,6 @@
 # StocksUpdate
 A simple user-friendly app to check stock update. This is a take home code challenge for TextMe
-Tasks below 
-/*
+
 Requirements: 
 
 - SSO Apple Sign-on
@@ -17,4 +16,3 @@ Requirements:
 - Favorite symbol from the search result
 
 - Unit tests
-*/
