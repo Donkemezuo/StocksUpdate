@@ -16,3 +16,11 @@ Requirements:
 - Favorite symbol from the search result
 
 - Unit tests
+
+Completed Requirements:
+- Core Data for favorites 
+- Search for Symbol 
+- List Favorite 
+- Display daily/weekly/monthly values
+- Favorite symbol from the search result
+- Unit tests
