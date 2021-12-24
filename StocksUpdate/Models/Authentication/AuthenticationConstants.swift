@@ -11,4 +11,5 @@ class AuthenticationConstants {
     static let fullnameMaxChartacterCount = 20
     static let atSign = "@"
     static let dot = "."
+    static let userDefaultKey = "userID"
 }

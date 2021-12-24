@@ -22,7 +22,6 @@
 		F0AF18CB276DBF8800885935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF18C9276DBF8800885935 /* LaunchScreen.storyboard */; };
 		F0AF18E4276E6BE600885935 /* AuthenticationModelValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF18E3276E6BE600885935 /* AuthenticationModelValidatorTest.swift */; };
 		F0AF18EA276E6CFE00885935 /* AuthenticationModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF18E9276E6CFE00885935 /* AuthenticationModelValidator.swift */; };
-		F0AF18EC276E6DBC00885935 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF18EB276E6DBC00885935 /* AuthenticationModel.swift */; };
 		F0AF18EE276E728D00885935 /* AuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF18ED276E728D00885935 /* AuthenticationConstants.swift */; };
 		F0AF18F2276EDE7E00885935 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF18F1276EDE7E00885935 /* WebService.swift */; };
 		F0AF18F4276EE18600885935 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF18F3276EE18600885935 /* AppErrors.swift */; };
@@ -38,6 +37,8 @@
 		F0AF19082772A48D00885935 /* StockDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF19072772A48D00885935 /* StockDetailsViewModel.swift */; };
 		F0AF190A2772B54700885935 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF19092772B54700885935 /* String+Extensions.swift */; };
 		F0AF190D2772C0F500885935 /* FavoriteStock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0AF190B2772C0F500885935 /* FavoriteStock.xcdatamodeld */; };
+		F0EEE86A27756A8000AC8515 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEE86927756A8000AC8515 /* AuthenticationViewController.swift */; };
+		F0EEE86C277578EF00AC8515 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEE86B277578EF00AC8515 /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +71,6 @@
 		F0AF18D9276E6B3C00885935 /* StocksUpdateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksUpdateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF18E3276E6BE600885935 /* AuthenticationModelValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModelValidatorTest.swift; sourceTree = "<group>"; };
 		F0AF18E9276E6CFE00885935 /* AuthenticationModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModelValidator.swift; sourceTree = "<group>"; };
-		F0AF18EB276E6DBC00885935 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		F0AF18ED276E728D00885935 /* AuthenticationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationConstants.swift; sourceTree = "<group>"; };
 		F0AF18F1276EDE7E00885935 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		F0AF18F3276EE18600885935 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		F0AF19072772A48D00885935 /* StockDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewModel.swift; sourceTree = "<group>"; };
 		F0AF19092772B54700885935 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F0AF190C2772C0F500885935 /* FavoriteStock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteStock.xcdatamodel; sourceTree = "<group>"; };
+		F0EEE86927756A8000AC8515 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		F0EEE86B277578EF00AC8515 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		F011303E277398B900F7EDDE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0AF18E7276E6C8500885935 /* Authentication */,
 				F011304B27739F1D00F7EDDE /* FavoritesList */,
 				F011304827739A9D00F7EDDE /* StockDetails */,
 				F011304727739A8300F7EDDE /* StockList */,
@@ -137,7 +140,6 @@
 			children = (
 				F0AF18E9276E6CFE00885935 /* AuthenticationModelValidator.swift */,
 				F0AF18ED276E728D00885935 /* AuthenticationConstants.swift */,
-				F0AF18EB276E6DBC00885935 /* AuthenticationModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -281,7 +283,6 @@
 				F011303D277398A900F7EDDE /* Views */,
 				F0AF18F0276EDE4300885935 /* Network */,
 				F011303E277398B900F7EDDE /* Controllers */,
-				F0AF18E7276E6C8500885935 /* Authentication */,
 				F0AF18D2276DD47300885935 /* StocksUpdate.entitlements */,
 				F0AF18BE276DBF8400885935 /* AppDelegate.swift */,
 				F0AF18C0276DBF8400885935 /* SceneDelegate.swift */,
@@ -313,16 +314,9 @@
 		F0AF18E7276E6C8500885935 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				F0AF18E8276E6CCB00885935 /* Models */,
+				F0EEE86927756A8000AC8515 /* AuthenticationViewController.swift */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		F0AF18E8276E6CCB00885935 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F0AF18EF276EDE0B00885935 /* Models */ = {
@@ -342,6 +336,7 @@
 				F011305A2773BE4E00F7EDDE /* WebServiceProtocol.swift */,
 				F0AF18F527711B4200885935 /* SymbolSearchEndpoint.swift */,
 				F0AF18F72771240A00885935 /* AppDataManager.swift */,
+				F0EEE86B277578EF00AC8515 /* AuthenticationManager.swift */,
 				F0AF18F3276EE18600885935 /* AppErrors.swift */,
 			);
 			path = Network;
@@ -454,14 +449,15 @@
 				F0AF18C3276DBF8400885935 /* StockListViewController.swift in Sources */,
 				F0AF190D2772C0F500885935 /* FavoriteStock.xcdatamodeld in Sources */,
 				F0AF19042772522D00885935 /* SymbolTableviewCellViewModel.swift in Sources */,
+				F0EEE86A27756A8000AC8515 /* AuthenticationViewController.swift in Sources */,
 				F0AF18F4276EE18600885935 /* AppErrors.swift in Sources */,
 				F0AF190A2772B54700885935 /* String+Extensions.swift in Sources */,
-				F0AF18EC276E6DBC00885935 /* AuthenticationModel.swift in Sources */,
 				F0AF18F2276EDE7E00885935 /* WebService.swift in Sources */,
 				F0AF18BF276DBF8400885935 /* AppDelegate.swift in Sources */,
 				F0AF18C1276DBF8400885935 /* SceneDelegate.swift in Sources */,
 				F0AF19082772A48D00885935 /* StockDetailsViewModel.swift in Sources */,
 				F0AF190627729C5500885935 /* StockDetailsViewController.swift in Sources */,
+				F0EEE86C277578EF00AC8515 /* AuthenticationManager.swift in Sources */,
 				F01130512773BAAE00F7EDDE /* UIViewController+Extension.swift in Sources */,
 				F011304F2773A71800F7EDDE /* FavoritesListViewController.swift in Sources */,
 				F011305B2773BE4E00F7EDDE /* WebServiceProtocol.swift in Sources */,
@@ -655,7 +651,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tariladou.donkemezuo.StocksUpdate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StocksUpdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -686,7 +682,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tariladou.donkemezuo.StocksUpdate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StocksUpdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -8,6 +8,7 @@
 import Foundation
 
 enum AppErrors: LocalizedError, Equatable {
+    case failedAuthenticationRequest(message: String)
     case invalidURLString
     case failedNetworkRequest(message: String)
     case jsonParsing
@@ -19,6 +20,8 @@ enum AppErrors: LocalizedError, Equatable {
             return message
         case .invalidURLString, .jsonParsing, .coreDataFetch:
             return ""
+        case .failedAuthenticationRequest(message: let message):
+            return message
         }
     }
 }

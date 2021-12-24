@@ -19,6 +19,7 @@ class AppDataManager {
     var symbolName = ""
     var favoritedStocksDict = [String: [FavoriteStock]]()
     var stocksFavoritedDates = [String]()
+    private let userDefault = UserDefaults.standard
     
     /// - Tag:  A function to fetch a symbol daily time series
     func fetchDailySymbolRecords(searchedSymbol: String?, completionHandler: @escaping(AppErrors?) -> ()) {
